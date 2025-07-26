@@ -2,4 +2,4 @@
 
 insert image here
 
-A color mixing and mathcing game built in STM32
+A 2-in-1 embedded color game
