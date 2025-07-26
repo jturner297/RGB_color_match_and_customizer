@@ -1,3 +1,5 @@
 # RGB Color Match + Customizer
 
-Built on stm32
+insert image here
+
+A color mixing and mathcing game built in STM32
