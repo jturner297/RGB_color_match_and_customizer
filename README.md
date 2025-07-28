@@ -12,7 +12,7 @@ A two-in-one embedded color game built on STM32
 2. RGB Color Customizer - A sandbox game where players can freely mix RGB values to create/customize colors
 
 # RGB Color Match
-words
+<img src="assets/CM_START_SCREEN2.gif" width="500" />
 
 # RGB Color Customizer
 <img src="assets/CC_START_SCREEN1.gif" width="500" />
