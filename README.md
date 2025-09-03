@@ -1,4 +1,4 @@
-# RGB Color Match + Customizer
+# RGB Color Match + Mixer (Work in Progress)
 
 <img src="assets/RGBgameThumbnailA.jpg" width="500" />
 
@@ -27,3 +27,23 @@ A two-in-one embedded color game built on STM32
 
 # RGB Color Customizer
 <img src="assets/CC_START_SCREEN1.gif" width="500" />
+
+## Demos
+<table>
+  <tr>
+    <td>
+  <a href="https://www.youtube.com/watch?v=BQ9yHDXTO0I">
+    <img src="assets/extended demo thumbnail.jpg" width="300%" />
+      </a>
+    </td>
+    <td>
+    <a href="https://www.youtube.com/watch?v=gO6LgwVbm_k">
+    <img src="assets/move_mode demo thumbnail.jpg"" width="300%" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><sub><strong>Gameplay</strong></sub></td>
+    <td><sub><strong>Mode Switching</strong></sub></td>
+  </tr>
+</table>
