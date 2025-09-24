@@ -9,22 +9,29 @@ An **embedded game platform** built on the STM32L476RG microcontroller that uses
 1. RGB Color Match - A puzzle game where players have to manually adjust RGB values to match another LED's color
 2. RGB Color Customizer - A sandbox game where players can freely mix RGB values to create/customize colors
 
-# General Platform Mechanics
+## General Platform Mechanics
+
 <table>
   <tr>
     <td>
       <a href="https://www.youtube.com/watch?v=J02tvOuEa3o">
-        <img src="assets/stm-says - demo_thumbail_B.png" width="400" />
+        <img src="assets/RGBmechanicsTHUMBNAIL.png" width="400" />
       </a>
     </td>
   </tr>
   <tr>
-    <td><sub><strong>Gameplay & Features Showcase</strong></sub></td>
+    <td><sub><strong>Demo</strong></sub></td>
   </tr>
 </table>
 
+- **Visual Feedback:** LED animation is used to provide real-time visual cues.
+  - **Start screen animations:** Immediately reflects the selected mode, so users always know which mode is active before starting.  
+  - **Brightness Bars:** Visual representation of RGB intensity levels.
+- **Interactive Buttons:** Start the game or adjust RGB channels during gameplay
+- **Mode Selection via User Button:** The special onboard button allows users to switch between Color Match and Color Mixer on the start screen. 
 
-# RGB Color Match
+
+## RGB Color Match
 
 <img src="assets/CM_START_SCREEN2.gif" width="500" />
 
