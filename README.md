@@ -1,16 +1,7 @@
-# RGB Color Match + Mixer (Work in Progress)
+# RGB Color Match + Mixer 
 
 <img src="assets/RGBgameThumbnailA.jpg" width="500" />
 
-## Table of Contents
-- [General Platform Mechanics and Features](#general-platform-mechanics-and-features)  
-- [RGB Color Match](#rgb-color-match)  
-  - [Features](#features)  
-  - [Video Demo](#video-demo)  
-- [RGB Color Customizer](#rgb-color-customizer)  
-  - [Features](#features-1)  
-  - [Video Demo](#video-demo-1)  
-- [Block Diagram](#block-diagram)
 
 
 
@@ -19,6 +10,11 @@
 An **embedded game platform** built on the STM32L476RG microcontroller that uses RGB LEDs and pushbuttons to deliver interactive gameplay. 
 
 Currently supports two games: **Color Match** and **Color Mixer**, with room to grow into a full suite of RGB-based mini-games.
+## Table of Contents
+- [General Platform Mechanics and Features](#general-platform-mechanics-and-features)  
+- [RGB Color Match](#rgb-color-match)  
+- [RGB Color Customizer](#rgb-color-customizer)  
+- [Block Diagram](#block-diagram)
 
 ## General Platform Mechanics and Features
 These features are shared across both **Color Match** and **Color Mixer** modes:  
