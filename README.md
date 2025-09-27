@@ -71,3 +71,6 @@ A sandbox game where players can freely mix RGB values to create/customize color
 
 ---
 
+## Block Diagram
+<img src="assets/RGBgameBD.drawio (2)-1.png" alt="Game Thumbnail" width="1000"/> 
+
