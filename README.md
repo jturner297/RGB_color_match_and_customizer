@@ -36,15 +36,21 @@ An **embedded game platform** built on the STM32L476RG microcontroller that uses
 <img src="assets/CM_START_SCREEN2.gif" width="500" />
 
 ## Features
-🎮 **Focused on Puzzle Solving Gameplay**
-  - Players have to configure each three RGB channels to match another RGB
+🎮 **Puzzle Solving Gameplay** 
+- Players have to configure each three RGB channels to match a target color.
+- Each new color provides a fresh puzzle to solve with no set rounds or limits.  
 
-🔄 **Guided/Accesibilty Mode**
-  - If the player is struggling to match the RGB values, they can toggle on guided mode which alerts a player when they have succesfully match a color value
+💡 **Hardware RNG**  
+- Randomly selects from a pool of preset colors using onboard hardware RNG.
+- Ensures each playthrough is unique and replayable.
 
-💡 **Hardware RNG**
-  - To keep the game frsh/interesting, the game uses RNG to randomly select between preset colors
-  - So the sequence of colors is always unique
+🔄 **Accesibilty Options**  
+- **Guided Mode:** Alerts players when an RGB channel is correctly matched.  
+- **Skip Option:** Players can skip a color if stuck and continue the game without penalty.  
+
+
+## Demo
+
 
 
 # RGB Color Customizer
