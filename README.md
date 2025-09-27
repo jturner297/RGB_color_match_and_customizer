@@ -15,7 +15,7 @@ These features are shared across both **Color Match** and **Color Mixer** modes:
 <table>
   <tr>
     <td>
-      <a href="https://www.youtube.com/watch?v=J02tvOuEa3o">
+      <a href="https://www.youtube.com/watch?v=B4YANqUfPBE">
         <img src="assets/RGBmechanicsTHUMBNAIL.png" width="400" />
       </a>
     </td>
@@ -36,7 +36,7 @@ These features are shared across both **Color Match** and **Color Mixer** modes:
 
 <img src="assets/CM_START_SCREEN2.gif" width="500" />
 
-## Features
+### Features
 🎮 **Puzzle Solving Gameplay** 
 - Players have to configure each three RGB channels to match a target color.
 - Each new color provides a fresh puzzle to solve with no set rounds or limits.  
@@ -50,14 +50,12 @@ These features are shared across both **Color Match** and **Color Mixer** modes:
 - **Skip Option:** Players can skip a color if stuck and continue the game without penalty.  
 
 
-## Demo
 
 
-
-# RGB Color Customizer
+## RGB Color Customizer
 <img src="assets/CC_START_SCREEN1.gif" width="500" />
 
-## Features
+### Features
 🎮 **Sandbox Gameplay** 
 - Endless creative mode where players can freely mix and experiment with RGB values.  
 - No target color or win condition. Just open-ended exploration of color blending.  
@@ -66,22 +64,18 @@ These features are shared across both **Color Match** and **Color Mixer** modes:
 - Adjust RGB channels with precise control for subtle variations.  
 - Perfect for experimenting with gradients, shades, and unique color combinations.  
 
-## Demos
+## Video Demos
 <table>
   <tr>
     <td>
-  <a href="https://www.youtube.com/watch?v=BQ9yHDXTO0I">
-    <img src="assets/extended demo thumbnail.jpg" width="300%" />
+  <a href="https://www.youtube.com/watch?v=oqsAb8M-xsQ">
+    <img src="assets/colorMatchDemoImage.png" width="300%" />
       </a>
     </td>
     <td>
-    <a href="https://www.youtube.com/watch?v=gO6LgwVbm_k">
-    <img src="assets/move_mode demo thumbnail.jpg"" width="300%" />
+    <a href="https://www.youtube.com/watch?v=AMXlK-1DzHM">
+    <img src="assets/colorMixDemoImage.png"" width="300%" />
       </a>
     </td>
-  </tr>
-  <tr>
-    <td><sub><strong>Gameplay</strong></sub></td>
-    <td><sub><strong>Mode Switching</strong></sub></td>
   </tr>
 </table>
