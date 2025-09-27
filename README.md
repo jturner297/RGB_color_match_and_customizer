@@ -5,9 +5,7 @@
 A modular embedded gaming platform built on STM32
 
 ## Project Overview
-An **embedded game platform** built on the STM32L476RG microcontroller that uses RGB LEDs and pushbuttons to deliver interactive gameplay. Currently supports two games: Color Match and Color Mixer, with room to grow into a full suite of RGB-based mini-games.
-1. RGB Color Match - A puzzle game where players have to manually adjust RGB values to match another LED's color
-2. RGB Color Customizer - A sandbox game where players can freely mix RGB values to create/customize colors
+An **embedded game platform** built on the STM32L476RG microcontroller that uses RGB LEDs and pushbuttons to deliver interactive gameplay. Currently supports two games: **Color Match** and **Color Mixer**, with room to grow into a full suite of RGB-based mini-games.
 
 ## General Platform Mechanics + Features
 These features are shared across both **Color Match** and **Color Mixer** modes:  
@@ -33,6 +31,7 @@ These features are shared across both **Color Match** and **Color Mixer** modes:
 
 
 ## RGB Color Match
+A puzzle game where players have to manually adjust RGB values to match another LED's color
 
 <img src="assets/CM_START_SCREEN2.gif" width="500" />
 
@@ -49,10 +48,23 @@ These features are shared across both **Color Match** and **Color Mixer** modes:
 - **Guided Mode:** Alerts players when an RGB channel is correctly matched.  
 - **Skip Option:** Players can skip a color if stuck and continue the game without penalty.  
 
-
+<table>
+  <tr>
+    <td>
+    <a href="https://www.youtube.com/watch?v=oqsAb8M-xsQ">
+    <img src="assets/colorMatchDemoImage.png" width="250" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><sub><strong>Demo</strong></sub></td>
+  </tr>
+</table>
 
 
 ## RGB Color Customizer
+A sandbox game where players can freely mix RGB values to create/customize colors
+ 
 <img src="assets/CC_START_SCREEN1.gif" width="500" />
 
 ### Features
@@ -63,19 +75,17 @@ These features are shared across both **Color Match** and **Color Mixer** modes:
 🎨 **Fine tuned brightness tweaking**  
 - Adjust RGB channels with precise control for subtle variations.  
 - Perfect for experimenting with gradients, shades, and unique color combinations.  
-
-## Video Demos
 <table>
   <tr>
     <td>
-  <a href="https://www.youtube.com/watch?v=oqsAb8M-xsQ">
-    <img src="assets/colorMatchDemoImage.png" width="300%" />
-      </a>
-    </td>
-    <td>
     <a href="https://www.youtube.com/watch?v=AMXlK-1DzHM">
-    <img src="assets/colorMixDemoImage.png"" width="300%" />
+    <img src="assets/colorMixDemoImage.png"" width="250" />
       </a>
     </td>
   </tr>
+  <tr>
+    <td><sub><strong>Demo</strong></sub></td>
+  </tr>
 </table>
+
+
