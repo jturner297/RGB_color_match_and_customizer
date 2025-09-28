@@ -7,44 +7,65 @@
 * File: leds.h
 * Header file for leds.c
 *************************************************************************************************/
-/*
-void configure_LEDS (GPIO_TypeDef *port, uint32_t pins[], uint32_t number_of_pins, uint32_t port_clock_num);
-void TURN_ON_LED_BLOCK (struct LEDblock *LEDgroup);
-void TURN_OFF_LED_BLOCK (struct LEDblock *LEDgroup);
-void QUICK_TOGGLE_LED_BLOCK (struct LEDblock *LEDgroup);
-void TOGGLE_SCOREBOARD(void);
+/******************************
+*	LED Macros/Constants
+*******************************/
+#define TEST_ACTIVE_LED_ON (GPIOC->ODR |= (0x1 << 9))
+#define TEST_ACTIVE_LED_OFF (GPIOC->ODR &= ~(0x1 << 9))
+#define TEST_ACTIVE_LED_TOGGLE (GPIOC->ODR ^= (0x1 << 9))
 
-//all LED block
-extern struct Light_Emitting_Diode all_leds[];
-extern struct LEDblock all_block;
+#define WIN_LED_ON (GPIOC->ODR |= (0x1 << 8))
+#define WIN_LED_OFF (GPIOC->ODR &= ~(0x1 << 8))
+#define WIN_LED_TOGGLE (GPIOC->ODR ^= (0x1 << 8))
 
-//blue LED block
-extern struct Light_Emitting_Diode blue_leds[];
-extern struct LEDblock blue_block;
+#define GUIDED_MODE_LED_ON (GPIOA->ODR |= (0x1 << 15))
+#define GUIDED_MODE_LED_OFF (GPIOA->ODR &= ~(0x1 << 15))
+#define GUIDED_MODE_LED_TOGGLE (GPIOA->ODR ^= (0x1 << 15))
 
-//red LED block
-extern struct Light_Emitting_Diode red_leds[];
-extern struct LEDblock red_block;
-
-//yellow LED block
-extern struct Light_Emitting_Diode yellow_leds[];
-extern struct LEDblock yellow_block;
-
-//green LED block
-extern struct Light_Emitting_Diode green_leds[];
-extern struct LEDblock green_block;
-
-//maps a color's ID to it's associated LED block
-extern struct LEDblock* colorID_to_LEDblock[];
+#define SPECIAL_LED_ON (GPIOA->ODR |= (0x1 << 5))
+#define SPECIAL_LED_OFF (GPIOA->ODR &= ~(0x1 << 5))
 
 
-extern struct Light_Emitting_Diode SELECTED_PATTERN_INDICATOR_LEDS[];
-extern struct Light_Emitting_Diode STATUS_INDICATOR_LEDS[];
-extern struct LEDblock STATUS_INDICATOR_BLOCK ;
-extern struct LEDblock SELECTED_PATTERN_INDICATOR_BLOCK;
+extern struct RGB_Light_Emitting_Diode PLAYER_LED;
 
-extern struct Light_Emitting_Diode unused_leds[];
-extern struct LEDblock unused_block;
-*/
+
+
+extern struct RGB_Light_Emitting_Diode SYSTEM_LED;
+
+
+
+extern struct GPIO_config RED_PROGRESS_BAR_LEDS[];
+extern struct LED_block RED_PROGRESS_BAR;
+
+extern struct GPIO_config GREEN_PROGRESS_BAR_LEDS[];
+extern struct LED_block GREEN_PROGRESS_BAR;
+
+extern struct GPIO_config BLUE_PROGRESS_BAR_LEDS[];
+extern struct LED_block BLUE_PROGRESS_BAR;
+
+extern struct GPIO_config GUIDED_MODE_INDICATOR_LEDS[];
+extern struct LED_block GUIDED_MODE_INDICATOR;
+
+
+
+extern struct GPIO_LED_config GPIOA_LED_config;
+extern struct GPIO_LED_config GPIOB_LED_config;
+extern struct GPIO_LED_config GPIOC_LED_config;
+
+
+
+
+
+void CONFIGURE_STANDARD_LEDS( struct GPIO_LED_config *GPIOx_LED_config);
+void SETUP_ALTERNATE_FUNCTION_PINS( struct RGB_Light_Emitting_Diode *RGB_LED);
+void SETUP_PWN( struct RGB_Light_Emitting_Diode *RGB_LED);
+void SETUP_RGB_LED( struct RGB_Light_Emitting_Diode *RGB_LED);
+void CONFIGURE_ALL_LEDS(void);
+void RESET_RGB_CHANNEL( struct colors *channels);
+void UPDATE_RGB_CHANNEL_VALUES( struct RGB_Light_Emitting_Diode *RGB_LED, int32_t r_value, int32_t g_value, int32_t b_value);
+void RESET_RGB_LED_CHANNELS(void);
+void DISPLAY_RGB_LED(struct RGB_Light_Emitting_Diode *RGB_LED);
+
+void TURN_OFF_LED_BLOCK(struct LED_block *LED_group);
 
 #endif /* LEDS_H_ */

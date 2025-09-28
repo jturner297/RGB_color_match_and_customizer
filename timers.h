@@ -6,12 +6,21 @@
 * File: timers.h
 * Header file for timers.c
 *************************************************************************************************/
-void STOP_TIM2(void);
-void START_TIM2(void);
-void STOP_TIM2_FOR_CONFIG(void);
-void STOP_TIM2_SAFELY(void);
-void RECONFIG_AND_RESTART_TIMER(uint32_t frequency_hz);
+/******************************
+*	Timer Macros/Constants
+*******************************/
+#define startSysTickTimer_MACRO (SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk)
+
+#define SYS_CLK_FREQ 4000000// default frequency of the device = 4 MHZ
+#define cntclk 1000
+
+#define TWO_HZ_SPEED 2
+#define THREE_HZ_SPEED 3
+#define FOUR_HZ_SPEED 4
+#define SIX_HZ_SPEED 6
+
+#define SYSTICK_1MS ((SYS_CLK_FREQ / 1000) - 1)
+
 void configureSysTickInterrupt(void);
-void updateARR(uint32_t frequency_hz);
-void configureTIM2(void);
+
 #endif /* TIMERS_H_ */
